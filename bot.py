@@ -3404,7 +3404,7 @@ def fi(text: str) -> str:
 # ─── CONFIG ────────────────────────────────────────────────────────────────────
 API_ID    = 38807471
 API_HASH  = '9bbfb9efe1a47596cf7f1b20017f5dc6'
-BOT_TOKEN = os.environ.get('BOT_TOKEN', '8832774495:AAGV5ndonzAMvjztXLcno9-1QGTlmZM6foc')
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '8942669149:AAGcUw4UWI3GVlX4BmvX2jLpj2GaCZeqIis')
 _ADMIN_FILE     = os.path.join(os.path.dirname(__file__), 'admin.json')
 _DEFAULT_ADMINS = {
     int(x.strip()) for x in
