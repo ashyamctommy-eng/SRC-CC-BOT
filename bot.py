@@ -3736,7 +3736,7 @@ def load_sites_for_user(uid: int) -> tuple:
     # Nothing tagged at all — return everything so the check still runs
     return all_sites, 'any'
 
-KEY_PREFIX = "VENOM"
+KEY_PREFIX = "PORIOTKE"
 
 TIER_LIMITS = {
     "admin": 25000,
