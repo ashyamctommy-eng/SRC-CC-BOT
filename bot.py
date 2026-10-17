@@ -3962,8 +3962,7 @@ BUTTON_CUSTOM_EMOJIS = {
     "💳": "5447453226498552490",
     "⏰": "5445350406215465190",
 }
-
-def _btn_icon_id(text: str) -> str | None:
+def _btn_icon_id(text: str):
     for emoji_char, doc_id in BUTTON_CUSTOM_EMOJIS.items():
         if emoji_char in text:
             return doc_id
