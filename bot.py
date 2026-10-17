@@ -77,7 +77,7 @@ import asyncio
 import hashlib
 from pathlib import Path
 
-from curl_cffi import requests
+import requests
 from curl_cffi.requests import Session, BrowserType
 
 # ──────────────────────── config ─────────────────────────────────────
