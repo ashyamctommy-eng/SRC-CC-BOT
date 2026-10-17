@@ -4388,7 +4388,7 @@ def is_access_valid(uid: int) -> bool:
         return _now_utc() < exp
     except: return False
 
-def get_user_tier(uid: int) -> str | None:
+def get_user_tier(uid: int):
     if is_admin(uid): return "admin"
     if is_access_valid(uid): return _user_access[uid].get('tier', 'key')
     if str(uid) in load_premium_users(): return "admin"
@@ -4398,7 +4398,7 @@ def get_user_limit(uid: int) -> int:
     tier = get_user_tier(uid)
     return TIER_LIMITS.get(tier, 0)
 
-def time_remaining(uid: int) -> str | None:
+def time_remaining(uid: int):
     acc = _user_access.get(uid)
     if not acc: return None
     try:
