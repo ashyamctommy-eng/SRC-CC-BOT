@@ -78,8 +78,8 @@ import hashlib
 from pathlib import Path
 
 import requests
-from curl_cffi.requests import Session, BrowserType
-
+import requests
+from requests import Session
 # ──────────────────────── config ─────────────────────────────────────
 
 SITE_TXT = Path(__file__).parent / "site.txt"
