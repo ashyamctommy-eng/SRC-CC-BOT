@@ -3631,10 +3631,10 @@ def price_to_tier(price: float) -> str:
     if price < 15.0:  return "10"
     return "20"
 
-def _fetch_site_price_sync(shop_url: str, proxy: str = None) -> float | None:
+def _fetch_site_price_sync(shop_url: str, proxy: str = None):
     """Blocking: hit /products.json, return cheapest available variant price or None."""
     try:
-        from curl_cffi.requests import Session as _CSession
+        from requests import Session as _CSession
         from checker import normalize_proxy
 
         proxy_url = None
