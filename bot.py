@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from __future__ import annotations
 # =============================================================================
 #  habash — Shopify Card Checker Bot  (single-file edition)
 # =============================================================================
@@ -5001,7 +5000,7 @@ def _proxy_to_url(proxy: str) -> str:
         return f'http://{user_part}:{pw_part}@{host}:{port}'
     return f'http://{p}'
 
-async def get_proxy_ip(proxy: str) -> str | None:
+async def get_proxy_ip(proxy: str) -> Optional[str]:
     proxy_url = _proxy_to_url(proxy)
     if proxy_url.startswith('socks'):
         return None
