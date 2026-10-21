@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 # =============================================================================
 #  habash — Shopify Card Checker Bot  (single-file edition)
 # =============================================================================
